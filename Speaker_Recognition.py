@@ -9,7 +9,7 @@ from Model.model_definition import Model
 from tensorflow.keras.callbacks import TensorBoard
 
 
-def training_model(noise_check=True):
+def training_model(noise_check=False):
     tensorboard = TensorBoard(log_dir="logs/{}".format(cts.NAME))
 
     # NOISE PREPATATION
@@ -122,4 +122,4 @@ def model_info():
 
 
 # TRAINING###
-training_model()
+# training_model()
